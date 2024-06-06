@@ -1,0 +1,89 @@
+.sticky-bar {
+  position: fixed;
+  top: 60%;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+  /* left: -8%; */
+  right: -5%;
+  background-color: #ec3237;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  z-index: 9;
+  font-size: large;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.sticky-bar:hover {
+  -webkit-transform: translateY(-50%) rotate(-90deg) scale(1.1);
+  -ms-transform: translateY(-50%) rotate(-90deg) scale(1.1);
+  transform: translateY(-50%) rotate(-90deg) scale(1.1);
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateY(-50%) rotate(-90deg);
+    -ms-transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  25% {
+    -webkit-transform: translateY(-50%) rotate(-95deg);
+    -ms-transform: translateY(-50%) rotate(-95deg);
+    transform: translateY(-50%) rotate(-95deg);
+  }
+  50% {
+    -webkit-transform: translateY(-50%) rotate(-85deg);
+    -ms-transform: translateY(-50%) rotate(-85deg);
+    transform: translateY(-50%) rotate(-85deg);
+  }
+  75% {
+    -webkit-transform: translateY(-50%) rotate(-95deg);
+    -ms-transform: translateY(-50%) rotate(-95deg);
+    transform: translateY(-50%) rotate(-95deg);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) rotate(-85deg);
+    -ms-transform: translateY(-50%) rotate(-85deg);
+    transform: translateY(-50%) rotate(-85deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sticky-bar {
+    right: -16%;
+    padding: 5px 12px;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sticky-bar {
+    right: -10%;
+    padding: 5px 12px;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sticky-bar {
+    right: -12%;
+    padding: 5px 12px;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .sticky-bar {
+    right: -5%;
+    padding: 4px 10px;
+    font-size: small;
+  }
+}

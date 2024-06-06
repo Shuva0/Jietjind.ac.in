@@ -1,0 +1,59 @@
+.img-stud-1,
+.img-stud-2,
+.img-stud-3,
+.img-stud-4,
+.img-stud-5 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: background-size 1s ease-in-out;
+}
+
+/* .img-stud-2:hover,
+.img-stud-4:hover,
+.img-stud-5:hover {
+  background-size: 120%;
+} */
+
+.img-stud-1 {
+  background-image: url("https://ik.imagekit.io/tedxsitb/DSC_2844.JPG?updatedAt=1710557966635&auto=format&fit=crop&w=1000&q=80");
+}
+
+.img-stud-2 {
+  background-image: url("https://ik.imagekit.io/tedxsitb/RAH04305.JPG?updatedAt=1710638949734&auto=format&fit=crop&w=1000&q=80");
+}
+
+.img-stud-3 {
+  background-image: url("https://ik.imagekit.io/tedxsitb/DSC_2705.JPG?updatedAt=1710557367513&auto=format&fit=crop&w=1000&q=80");
+}
+
+.img-stud-4 {
+  background-image: url("https://ik.imagekit.io/tedxsitb/RAH04226.JPG?updatedAt=1710638953020&auto=format&fit=crop&w=1000&q=80");
+}
+
+.img-stud-5 {
+  background-image: url("https://ik.imagekit.io/tedxsitb/DSC_2894.JPG?updatedAt=1710638952579&auto=format&fit=crop&w=1000&q=80");
+}
+
+.text-img-stud {
+  color: white;
+  padding: 4% 4%;
+  background: #ec3237;
+}
+
+.main-stud {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+}
+.main-stud h1 {
+  font-size: 40px;
+  font-weight: 600;
+}

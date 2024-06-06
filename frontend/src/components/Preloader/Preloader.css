@@ -1,0 +1,62 @@
+#loader {
+  background: black;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Sans-Serif;
+  height: 100vh;
+  overflow: hidden;
+}
+.load.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.load.container.grid,
+.load.container.columns {
+  align-content: stretch;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.letter {
+  text-align: center;
+  color: black;
+  font-size: 10vmax;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+}
+.load.container.grid .letter {
+  flex-basis: 50%;
+}
+.load.container.columns .letter {
+  flex-basis: 25%;
+}
+
+.t {
+  background: rgb(255, 255, 255);
+  font-weight: 500;
+}
+.e {
+  background: rgb(131, 131, 131);
+  font-weight: 500;
+}
+.d {
+  background: rgb(42, 42, 42);
+  color: #fff;
+  font-weight: 500;
+}
+.x {
+  color: #e62b1e;
+  font-weight: 550;
+}
+.load.container.plain .letter {
+  background: transparent;
+  color: white;
+  padding: 0;
+}

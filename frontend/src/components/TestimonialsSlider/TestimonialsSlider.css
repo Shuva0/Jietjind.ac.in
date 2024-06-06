@@ -1,0 +1,58 @@
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding: 2rem;
+  margin-bottom: 3%;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 45px;
+  color: gray;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #333;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button {
+  font-size: 15px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: transparent;
+  border-radius: 50;
+}
+
+.std-review-h1 {
+  font-size: 40px;
+  font-weight: 700;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 600px) {
+  .std-review-h1 {
+    font-size: 30px; /* Adjust the font size for smaller screens */
+  }
+  .testimonial {
+    margin-top: 40%;
+  }
+}

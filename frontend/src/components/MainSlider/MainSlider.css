@@ -1,0 +1,318 @@
+.main-vid {
+  position: relative;
+  display: flex;
+}
+
+/* .content-slide-vid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content-slide: center;
+  align-items: end;
+} */
+
+.child-content-slide-1 {
+  flex: 5;
+}
+.child-content-slide-2 {
+  flex: 5;
+}
+
+/* .apply-now {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+.apply-now h3 {
+  color: #666666;
+}
+.header-top {
+  display: flex;
+  flex-direction: column;
+  justify-content-slide: center;
+  align-items: center;
+  background: #f2f4f8;
+}
+.mid-portion {
+  display: grid;
+  /* grid-template-rows: repeat(2, 1fr); 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-items: center;
+  gap: 20%;
+  justify-items: center;
+}
+
+.input1 input {
+  padding: 2% 4% 2% 4%;
+  border: 1px solid black;
+} */
+
+/*Slider CSS*/
+.slider {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slide 20s infinite;
+}
+
+.slider .slide:nth-child(1) {
+  background-image: url("https://ik.imagekit.io/tedxsitb/RAH04211.JPG?updatedAt=1710557399345&auto=format&fit=crop&w=1000&q=80");
+  animation-delay: -0;
+}
+
+.slider .slide:nth-child(2) {
+  background-image: url("https://ik.imagekit.io/tedxsitb/DSC_2705.JPG?updatedAt=1710557367513&auto=format&fit=crop&w=1000&q=80");
+  animation-delay: -4s;
+}
+
+.slider .slide:nth-child(3) {
+  background-image: url("https://ik.imagekit.io/tedxsitb/DSC_2844.JPG?updatedAt=1710557966635&auto=format&fit=crop&w=1000&q=80");
+  animation-delay: -8s;
+}
+
+.slider .slide:nth-child(4) {
+  background-image: url("https://ik.imagekit.io/tedxsitb/DSC_2884.JPG?updatedAt=1710557962453&auto=format&fit=crop&w=1000&q=80");
+  animation-delay: -12s;
+}
+
+.slider .slide:nth-child(5) {
+  background-image: url("https://ik.imagekit.io/tedxsitb/RAH04233.JPG?updatedAt=1710557969305&auto=format&fit=crop&w=1000&q=80");
+  animation-delay: -16s;
+}
+
+@keyframes slide {
+  0%,
+  15%,
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  20% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  95% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
+
+/*Reg Form CSS*/
+.container-slide {
+  position: absolute;
+  max-width: 500px;
+  width: 100%;
+  background-color: #f2f4f8;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  right: 10%;
+  top: 10%;
+}
+.container-slide .title-slid {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f2f4f8;
+}
+.upper {
+  color: #666666;
+}
+.lower {
+  font-size: 20px;
+  font-weight: 600;
+}
+.close-button img {
+  width: 4%;
+}
+.close-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.close-button img:hover {
+  cursor: pointer;
+}
+
+.content-slide form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details {
+  display: block;
+  margin-bottom: 5px;
+}
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+form .gender-details .gender-title-slid {
+  font-size: 20px;
+  font-weight: 500;
+}
+form .category {
+  display: flex;
+  margin: 14px 0;
+  gap: 4%;
+  justify-content: space-evenly;
+}
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  background: #9b59b6;
+  border-color: #d9d9d9;
+}
+form input[type="radio"] {
+  display: none;
+}
+form .button-slide {
+  height: 45px;
+  margin: 35px 0;
+}
+form .button-slide input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #ec3237;
+}
+form .button-slide input:hover {
+  /* transform: scale(0.99); */
+  background: black;
+}
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category {
+    width: 100%;
+  }
+  .content-slide form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+@media (max-width: 459px) {
+  .container-slide .content-slide .category {
+    position: relative;
+    flex-direction: column;
+  }
+  .container-slide {
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 584px) {
+  .container-slide {
+    position: relative;
+    right: 0% !important;
+  }
+  .slider {
+    height: 40vh;
+  }
+}
+
+.left-panel {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.left-panel:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .fancyhead {
+    background-image: url("https://images.pexels.com/photos/7130557/pexels-photo-7130557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 4vw;
+    text-transform: uppercase;
+    text-align: start;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .fancyhead2 {
+    background-image: url("https://png.pngtree.com/background/20230408/original/pngtree-blue-background-white-and-gradient-vector-picture-image_2339570.jpg");
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    font-size: 3vw;
+    text-align: start;
+    line-height: 1;
+    font-weight: 700;
+  }
+}

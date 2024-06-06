@@ -1,0 +1,13 @@
+.main-text-vid {
+  display: flex;
+  margin-right: 4%;
+  margin-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.vid-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
