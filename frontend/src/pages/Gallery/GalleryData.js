@@ -39,11 +39,11 @@ export const GalleryData = [
     title: "Campus Life",
     image: "./images/Jind_Institute_of_Engineering.jpg",
   },
-  // {
-  //   id: 9,
-  //   title: "Campus Life",
-  //   image: "./images/a9.png",
-  // },
+  {
+    id: 9,
+    title: "Campus Life",
+    image: "./images/apply banner.jpg",
+  },
   // {
   //   id: 10,
   //   title: "Campus Life",

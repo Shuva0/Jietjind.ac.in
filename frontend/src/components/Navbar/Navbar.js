@@ -204,7 +204,7 @@ export default function Navbar() {
                   color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
                 >
-                  Alumini
+                  Alumni
                 </Button>
               </Link>
               <Link to={"https://www.facebook.com/jindjiet/"} target="_blank">
